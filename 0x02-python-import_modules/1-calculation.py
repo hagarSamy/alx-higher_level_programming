@@ -5,9 +5,9 @@ if __name__ == "__main__":
     b = 5
     addition = add(a,b)
     subtraction = sub(a, b)
-    multiplication = mul(a, b)
+    multip = mul(a, b)
     division = div(a, b)
     print("{} + {} = {}".format(a,b, addition))
     print("{} - {} = {}".format(a,b, subtraction))
-    print("{} * {} = {}".format(a,b, multiplication))
+    print("{} * {} = {}".format(a,b, multip))
     print("{} / {} = {}".format(a,b, division))

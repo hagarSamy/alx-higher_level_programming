@@ -1,6 +1,7 @@
-#!/bin/bash/bython3
-from add_0 import add
-a = 1
-b = 2
-res = add(a, b)
-print("{} + {} = {}".format(a, b, res))
+#!/usr/bin/bython3
+if __name__ == "__main__":
+    from add_0 import add
+    a = 1
+    b = 2
+    res = add(a, b)
+    print("{} + {} = {}".format(a, b, res))

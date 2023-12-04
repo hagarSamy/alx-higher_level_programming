@@ -4,10 +4,10 @@ if __name__ == "__main__":
     a = 10
     b = 5
     addition = add(a,b)
-    subtract = sub(a, b)
-    multip = mul(a, b)
+    subtraction = sub(a, b)
+    multiplication = mul(a, b)
     division = div(a, b)
-    print("{} + {} = {}".format(a,b, addition))
-    print("{} - {} = {}".format(a,b, subtract))
-    print("{} * {} = {}".format(a,b, multip))
-    print("{} / {} = {}".format(a,b, division))
+    print("{} + {} = {}".format(a, b, addition))
+    print("{} - {} = {}".format(a, b, subtraction))
+    print("{} * {} = {}".format(a, b, multiplication))
+    print("{} / {} = {}".format(a, b, division))

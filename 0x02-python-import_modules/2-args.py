@@ -2,7 +2,9 @@
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 1:
-        args = "argument."
+        args = "arguments."
+    elif len(sys.argv) == 2:
+        args = "argument:"
     else:
         args = "arguments:"
     print("{} {}".format(len(sys.argv) - 1, args))

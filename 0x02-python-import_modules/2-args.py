@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import sys
-if len(sys.argv) == 1:
-    args = "argument."
-else:
-    args = "arguments:"
-print("{} {}".format(len(sys.argv) - 1, args))
-for i in range (1, len(sys.argv)):
-    print("{}: {}".format(i, sys.argv[i]))
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) == 1:
+        args = "argument."
+    else:
+        args = "arguments:"
+    print("{} {}".format(len(sys.argv) - 1, args))
+    for i in range(1, len(sys.argv)):
+        print("{}: {}".format(i, sys.argv[i]))

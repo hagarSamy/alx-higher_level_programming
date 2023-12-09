@@ -2,6 +2,8 @@
 def roman_to_int(roman_string):
     if not roman_string:
         return None
+    elif not isinstance(roman_string, str):
+        return "not a string"
     romNums = {
         'I': 1,
         'V': 5,

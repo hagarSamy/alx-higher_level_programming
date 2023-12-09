@@ -9,3 +9,6 @@ def weight_average(my_list=[]):
             sum += (a * b)
             num += b
     return sum / num
+# if my_list:
+# return (sum([a * b for a, b in my_list])/sum(b for a, b in my_list))
+# return 0

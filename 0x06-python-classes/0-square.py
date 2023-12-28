@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''An empty class that doeas nothing'''
+'''An empty class that does nothing'''
 
 
 class Square:

@@ -3,7 +3,7 @@
 
 
 class Square:
-    '''A class that gets and sets size with a propert'''
+    '''A class that gets and sets size with a property'''
     def __init__(self, size=0):
         self.size = size
 

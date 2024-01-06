@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''A module to define a rectangle'''
 
+
 class Rectangle:
     '''A class yo deine a rectangle'''
 
@@ -60,6 +61,6 @@ class Rectangle:
 
     def area(self):
         return self.__height * self.__width
-    
+
     def perimeter(self):
         return (self.__height + self.__width) * 2

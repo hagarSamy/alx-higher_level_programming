@@ -77,7 +77,7 @@ class Rectangle:
         resToReturn = ""
         if (self.__width != 0 and self.__height != 0):
             for i in range(self.__height):
-                resToReturn += Rectangle.print_symbol * self.__width
+                resToReturn += str(self.print_symbol) * self.__width
                 if i < self.__height - 1:
                     resToReturn += "\n"
         return resToReturn

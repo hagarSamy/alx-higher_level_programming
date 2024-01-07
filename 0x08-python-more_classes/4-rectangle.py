@@ -80,5 +80,4 @@ class Rectangle:
     def __repr__(self):
         """returns the object representation of the instance
         to be used by eval"""
-        return "Rectangle({}, {})".format(self.width, self.height) 
-        
+        return "Rectangle({}, {})".format(self.width, self.height)

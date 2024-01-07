@@ -106,4 +106,8 @@ class Rectangle:
         return rect_2
     @classmethod
     def square(cls, size=0):
+        '''turns a rectangle into a square
+        Args: size: height of the square
+        Returns : a class triangle of a square
+        '''
         return cls(size, size)

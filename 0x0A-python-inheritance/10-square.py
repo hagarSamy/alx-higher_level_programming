@@ -23,9 +23,4 @@ class Square(Rectangle):
     def area(self):
         '''calculates area of a rectangle'''
         return self.__size ** 2
-    def __str__(self):
-       '''Beautifies the output'''
-       ToReturn = "[" + type(self).__name__ + "]" + " "
-       ToReturn += str(self.__size) + "/"
-       ToReturn += str(self.__size)
-       return ToReturn
+    

@@ -3,5 +3,10 @@
 
 
 def read_file(filename=""):
+    """reads files
+    Args:
+        filename
+    """
+
     with open(filename, encoding="utf-8") as myFile:
-        print (myFile.read(), end="")
+        print ((myFile.read()), end="")

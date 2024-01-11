@@ -6,6 +6,7 @@ object (string)
 '''
 import json
 
+
 def to_json_string(my_obj):
     '''returns the json representation of an obj
     Args: the object to convert

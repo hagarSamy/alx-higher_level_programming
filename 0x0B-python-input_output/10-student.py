@@ -23,7 +23,7 @@ class Student:
 
         if isinstance(attrs, list):
             for attr in attrs:
-                if isinstance(attr, str):
+                if type(attr) == str:
                     if hasattr(self, attr):
                         return {attr: getattr(self, attr)}
         return self.__dict__

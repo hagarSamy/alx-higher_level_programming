@@ -30,3 +30,4 @@ class Student:
         else:
             return self.__dict__
         return DictToReturn
+# I like my code LOL

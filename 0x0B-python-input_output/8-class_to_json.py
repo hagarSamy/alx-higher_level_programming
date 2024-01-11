@@ -15,4 +15,4 @@ def class_to_json(obj):
     '''
 
     #vars(obj) gives same result
-    return obj.__dict__
+    return obj.__dict_

@@ -12,6 +12,7 @@ def save_to_json_file(my_obj, filename):
     the file to write to
     Return: void
     '''
+
     with open(filename, "w") as jf:
        json.dump(my_obj, jf)
 

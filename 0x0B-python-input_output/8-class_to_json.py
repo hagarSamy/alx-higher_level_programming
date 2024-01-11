@@ -14,5 +14,5 @@ def class_to_json(obj):
     Return: the dictionary description of an obh
     '''
 
-    #vars(obj) gives same result
+    # vars(obj) gives same result
     return obj.__dict__

@@ -13,8 +13,10 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 args = sys.argv[1:]
 
-
-itemsToAdd = []
+if os.path.isfile("add_item.json"):
+    itemsToAdd = load_from_json_file("add_item.json")
+else:
+    itemsToAdd = []
 
 allToAdd = itemsToAdd + args
 

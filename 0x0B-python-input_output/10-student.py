@@ -21,9 +21,12 @@ class Student:
         dict representation of a St instance
         """
 
+        DictToReturn = {}
         if isinstance(attrs, list):
             for attr in attrs:
                 if type(attr) == str:
                     if hasattr(self, attr):
-                        return {attr: getattr(self, attr)}
-        return self.__dict__
+                        DictToReturn.update({attr: getattr(self, attr)})
+        else:
+            return self.__dict__
+        return DictToReturn

@@ -1,0 +1,37 @@
+# run test with python3 -m doctest -v ./tests/0-add_integer.txt
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# test for integers
+>>> add_integer(0)
+98
+
+# test for zeros
+>>> add_integer(0, 0)
+0
+
+# test for negativess
+>>> add_integer(-1, -9)
+-10
+
+# test for floats
+>>> add_integer(2.0, 2.3)
+4
+
+#test for TtypeError
+>>> add_integer(3, "TWo")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer or float
+
+#test for NoneValue
+>>> add_integer(3, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer or float
+
+#test for NoneValue
+>>> add_integer(None, 100)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or float

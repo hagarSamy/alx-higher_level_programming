@@ -22,16 +22,16 @@
 >>> add_integer(3, "TWo")
 Traceback (most recent call last):
 ...
-TypeError: b must be an integer or float
+TypeError: b must be an integer
 
 #test for NoneValue
 >>> add_integer(3, None)
 Traceback (most recent call last):
 ...
-TypeError: b must be an integer or float
+TypeError: b must be an integer
 
 #test for NoneValue
 >>> add_integer(None, 100)
 Traceback (most recent call last):
 ...
-TypeError: a must be an integer or float
+TypeError: a must be an integer

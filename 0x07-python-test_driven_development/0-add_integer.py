@@ -6,7 +6,7 @@ and checks a test file
 
 
 def add_integer(a, b=98):
-    '''A function that adds two integers
+    '''A function that adds two integers or floats
     Args: a and b set to default: 98
     Return: sum of both integers
     '''
@@ -18,5 +18,5 @@ def add_integer(a, b=98):
     if not isinstance(a, int):
         raise TypeError("a must be an integer")
     if not isinstance(b, int):
-        raise TypeError("b must be an integer")
+        raise TypeError("b must be an integer or float")
     return (a + b)

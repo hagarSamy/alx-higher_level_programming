@@ -1,4 +1,4 @@
-# run test with python3 -m doctest -v ./tests/2-matrix_divide.txt
+# run test with python3 -m doctest -v ./tests/2-matrix_divided.txt
 
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
@@ -48,7 +48,7 @@ Traceback (most recent call last):
 TypeError: div must be a number
 
 #Test for a missing argument
->>> matrix_divided([[1, 6]])
+>>> matrix_divided([[1, 6]], None)
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
@@ -57,5 +57,4 @@ TypeError: div must be a number
 >>> matrix_divided(None, None)
 Traceback (most recent call last):
 ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
+TypeError: div must be a number

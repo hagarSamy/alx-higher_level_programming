@@ -19,7 +19,7 @@ TypeError: last_name must be a string
 My name is Salma Assem
 
 #Test for no args
->>> say_my_name(None, None)
+>>> say_my_name()
 Traceback (most recent call last):
 ...
-TypeError: first_name must be a string
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'

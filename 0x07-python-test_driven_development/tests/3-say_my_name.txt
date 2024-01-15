@@ -1,0 +1,20 @@
+# run test with python3 -m doctest ./tests/3-say_my_name.txt
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+#Test for non str 1st arg
+>>> say_my_name(3, "Assem")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#Test for non str 2nd arg
+>>> say_my_name("Assem", 5)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+#Test for ok case
+>>> say_my_name("Salma", "Assem")
+My name is Salma Assem
+

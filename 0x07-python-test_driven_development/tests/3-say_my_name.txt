@@ -18,3 +18,8 @@ TypeError: last_name must be a string
 >>> say_my_name("Salma", "Assem")
 My name is Salma Assem
 
+#Test for no args
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string

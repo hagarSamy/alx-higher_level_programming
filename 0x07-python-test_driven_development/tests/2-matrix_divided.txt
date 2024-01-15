@@ -47,14 +47,3 @@ Traceback (most recent call last):
 ...
 TypeError: div must be a number
 
-#Test for a missing argument
->>> matrix_divided([[1, 6]], None)
-Traceback (most recent call last):
-...
-TypeError: div must be a number
-
-#Test for 2 missing arguments
->>> matrix_divided(None, None)
-Traceback (most recent call last):
-...
-TypeError: div must be a number

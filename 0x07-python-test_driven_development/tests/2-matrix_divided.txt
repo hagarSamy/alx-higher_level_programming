@@ -45,3 +45,21 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
+
+#Test for division on float 0
+>>> matrix_divided([[1, 6]], 0.0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+#Test for 1 missing argument
+>>> matrix_divided([[1, 6]], None)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+#Test for 2 missing arguments
+>>> matrix_divided(None, None)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

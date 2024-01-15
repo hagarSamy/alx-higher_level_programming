@@ -1,0 +1,36 @@
+# run test with python3 -m doctest -v ./tests/2-matrix_divide.txt
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+#Test for regular matrix
+>>> matrix_divided([[1, 2, 3]], 2)
+[[0.5, 1.0, 1.5]]
+
+#Test for empty matrix
+>>> matrix_divided([[]], 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+#Test for zero division
+>>> matrix_divided([[1, 2, 3]], 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+#Test for irregular matrix
+>>> matrix_divided([[1, 2, 3], []], 2)
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size
+
+#Test for regular big matrix
+>>> matrix_divided([[1, 2, 3], [4, 6, 8]], 2)
+[[0.5, 1.0, 1.5], [2.0, 3.0, 4.0]]
+
+#Test for irregular matrix
+>>> matrix_divided([[1, 2, 3], [6]], 2)
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size

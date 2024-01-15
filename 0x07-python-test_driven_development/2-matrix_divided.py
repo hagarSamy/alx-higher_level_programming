@@ -12,18 +12,17 @@ def matrix_divided(matrix, div):
     Return: a matrix of nums with 2 decimal places
     '''
 
+    if not matrix:
+        raise TypeError("matrix must be a matrix (list of lists)"
+                        " of integers/floats")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if matrix == []:
-        raise TypeError("matrix must be a matrix (list of lists)"
-                        " of integers/float")
     for row in matrix:
         if row == []:
-            raise TypeError("matrix must be a matrix "
-                            "(list of lists) of integers/float")
+            raise TypeError("Each row of the matrix must have the same size")
         if not isinstance(row, list):
             raise TypeError("matrix must be a matrix "
-                            "(list of lists) of integers/float")
+                            "(list of lists) of integers/floats")
         for element in row:
             if not isinstance(element, (int, float)):
                 raise TypeError("matrix must be a matrix "

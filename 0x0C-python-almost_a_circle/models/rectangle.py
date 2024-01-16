@@ -132,5 +132,6 @@ class Rectangle(Base):
     def __str__(self):
         '''beautifies the output'''
 
-        s = f"[{Rectangle.__name__}] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        s = f"[{Rectangle.__name__}] ({self.id})" +
+        f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
         return s

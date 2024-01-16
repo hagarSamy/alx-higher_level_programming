@@ -7,6 +7,8 @@ class Base:
     def __init__(self, id=None):
         '''instatiation'''
 
-        if id:
+        if id is not None:
             self.id = id
-        Base.__nb_objects += 1
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects

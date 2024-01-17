@@ -11,7 +11,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         '''Instatiation of a square class'''
 
-        super().__init__(size, size, x=0, y=0, id=None)
+        super().__init__(size, size, x, y, id)
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size <= 0:

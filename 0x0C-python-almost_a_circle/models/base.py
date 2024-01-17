@@ -35,7 +35,7 @@ class Base:
 
         filename = cls.__name__ + ".json"
         if list_objs is None or list_objs == []:
-            list_objs = []
+            listDicts = []
         else:
             listDicts = []
             for obj in list_objs:

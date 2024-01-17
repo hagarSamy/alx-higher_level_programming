@@ -49,7 +49,9 @@ class Square(Rectangle):
         if size <= 0:
             raise ValueError("size must be > 0")
         else:
-            self.__size = size
+            
+            self.__width = size
+            self.__height = size
 
     @property
     def x(self):

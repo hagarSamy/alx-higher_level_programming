@@ -105,6 +105,7 @@ class Square(Rectangle):
             for k in range(self.__x):
                 print(" ", end="")
             print("#" * self.__size)
+
     def __str__(self):
         '''beautifies the output'''
 

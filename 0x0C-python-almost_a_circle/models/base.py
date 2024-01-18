@@ -2,6 +2,7 @@
 ''''A module to initiate a class'''
 
 import json
+import os
 
 
 class Base:
@@ -76,7 +77,8 @@ class Base:
         '''returns a list of instances'''
 
         filename = cls.__name__ + ".json"
-        if filename is None:
+        '''checking if the filename really exists'''
+        if not os.path.isfile(filename):
             return []
         with open(filename, "r") as f:
             '''getting data as 1 string'''

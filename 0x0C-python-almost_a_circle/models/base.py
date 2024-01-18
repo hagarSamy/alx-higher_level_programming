@@ -82,7 +82,7 @@ class Base:
             '''getting data as 1 string'''
             dataOfStrings = f.read()
         ''''''
-        listofdictionaries = cls.from_json_string(dataOfStrings)
+        listofdictionaries = [cls.from_json_string(dataOfStrings)]
         listofinstances = [cls.create(**dictionary)
                            for dictionary in listofdictionaries]
         return listofinstances

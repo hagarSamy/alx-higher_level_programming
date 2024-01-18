@@ -62,7 +62,7 @@ class Base:
         '''returns an instance with all attributes already set
         Args: dictionary: kword args
         '''
-    
+
         '''creating a dummy instance with arbitrary values'''
         dummy = cls(1, 1)
         dummy.update(**dictionary)

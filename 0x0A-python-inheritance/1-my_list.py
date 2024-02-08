@@ -11,8 +11,4 @@ class MyList(list):
         """method takes self as arg
         Args: self
         Returns : void : print sorted list"""
-        new = []
-        for i in self:
-            new.append(i)
-        new.sort()
-        print("{}".format(new))
+        print(sorted(self))

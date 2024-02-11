@@ -9,7 +9,7 @@ class Square(Rectangle):
     '''A subclass of the supersubclass Rectangle'''
 
     def __init__(self, size, x=0, y=0, id=None):
-        '''Instatiation of a square class'''
+        '''Instantiation of a square class'''
 
         super().__init__(size, size, x, y, id)
 
@@ -62,5 +62,5 @@ class Square(Rectangle):
         '''returns the dictionary representation of a square'''
 
         dict = {'id': self.id, 'x': self.x,
-                'size': self.width, 'y': self.y}
+                'size': self.size, 'y': self.y}
         return dict

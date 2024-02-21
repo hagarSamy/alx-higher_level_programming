@@ -2,4 +2,4 @@
 -- This command is useful for viewing (SQL statement that was used to create the table) ==
 -- the structure of the table, including column definitions, indexes, and any table-level attributes such as
 -- storage engine, character set, and collation.
-SHOW CREATE first_table
+SHOW CREATE TABLE first_table

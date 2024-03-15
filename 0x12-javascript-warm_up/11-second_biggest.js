@@ -5,9 +5,9 @@ if (len <= 3) {
   console.log('0');
 } else {
   let x, max, secMax;
-  max = Number(argv[2]);
-  secMax = Number(argv[2]);
-  for (let i = 3; i < len; i++) {
+  max = 0;
+  secMax = 0;
+  for (let i = 2; i < len; i++) {
     x = Number(argv[i]);
     if (x > max) {
       // to keep secMax updated alongside the mx

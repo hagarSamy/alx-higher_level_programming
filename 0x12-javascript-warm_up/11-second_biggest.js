@@ -10,9 +10,12 @@ if (len <= 3) {
   for (let i = 3; i < len; i++) {
     x = Number(argv[i]);
     if (x > max) {
+      // to keep secMax updated alongside the mx
+      secMax = max;
       max = x;
     }
     if (secMax < x && x < max) {
+      // to update secMax even if max isn't updated for an iteration
       secMax = x;
     }
   }

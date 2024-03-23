@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE \
-                name = %s ORDER BY states.id ASC LIMIT 1", (name,))
+                name = %s ORDER BY states.id ASC", (name,))
     rows = cur.fetchall()
     for row in rows:
         print(row)

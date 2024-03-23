@@ -16,7 +16,10 @@ if __name__ == "__main__":
                          db=dbname)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+    cur.execute("SELECT id, city.name, state.name FROM cities \
+                INNER JOIN states \
+                    WHERE states.id = cities.states_id \
+                        ORDER BY cities.id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)

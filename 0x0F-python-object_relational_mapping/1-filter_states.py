@@ -19,8 +19,10 @@ if __name__ == "__main__":
                          db=dbname)
 
     cur = db.cursor()
+    ''' LIKE isn't case sensiteive, so i used
+    COLLATE that will handle case sensitivity '''
     cur.execute('SELECT * FROM states WHERE \
-                BINARY name LIKE "N%" ORDER BY states.id ASC')
+                name COLLATE utf8_bin LIKE "N%" ORDER BY states.id ASC')
     rows = cur.fetchall()
     for row in rows:
         print(row)

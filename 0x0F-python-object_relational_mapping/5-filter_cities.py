@@ -25,13 +25,13 @@ if __name__ == "__main__":
                         WHERE states.name = %s\
                             ORDER BY cities.id ASC", (stName,))
     rows = cur.fetchall()
-    last = True
+    first = True
     for row in rows:
         for col in row:
-            if not last:
+            if not first:
                 print(', ', end='')
             print(col, end="")
-            last = False
+            first = False
     print()
     cur.close()
     db.close()

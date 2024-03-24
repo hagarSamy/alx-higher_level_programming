@@ -14,6 +14,7 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
 
 
 class State(Base):
+    ''' A class that inherits from Base'''
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,
                 unique=True, nullable=False, primary_key=True)

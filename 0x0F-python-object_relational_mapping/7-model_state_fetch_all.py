@@ -14,14 +14,6 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.name).all()
-    i = 1
+    states = session.query(State)
     for state in states:
-        print(f'{i}: {state.name}')
-        i += 1
-
-    ''''
-    enumerates returns two tubles constaining idxs and values
-    of the itteratable passed to it
-    for i, state in enumerate(states, start=1):
-            print(f'{i}: {state.name}')'''
+        print(f'{state.id}: {state.name}')

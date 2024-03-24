@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' class definition of a State and an instance of Base'''
+''' A module defining a State as an instance of Base'''
 from sqlalchemy import create_engine, Integer, Column, String
 from sqlalchemy.ext.declarative import declarative_base
 import sys
@@ -13,7 +13,7 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                        .format(db, usname, pswd))
 
 
-class State(Base):
+def State(Base):
     ''' A class that inherits from Base'''
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ''' A module defining a State as an instance of Base'''
-from sqlalchemy import create_engine, Integer, Column, String
+from sqlalchemy import Integer, Column, String
 from sqlalchemy.ext.declarative import declarative_base
 
 

@@ -29,7 +29,7 @@ if __name__ == "__main__":
     for row in rows:
         for col in row:
             if not first:
-                print(', ', end='')
+                print(', ', end="")
             print(col, end="")
             first = False
     print()

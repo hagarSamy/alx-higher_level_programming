@@ -13,7 +13,7 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                        .format(db, usname, pswd))
 
 
-def State(Base):
+class State(Base):
     ''' A class that inherits from Base'''
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,

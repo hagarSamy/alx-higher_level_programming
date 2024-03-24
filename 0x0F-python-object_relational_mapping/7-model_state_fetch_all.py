@@ -17,3 +17,4 @@ if __name__ == "__main__":
     states = session.query(State)
     for state in states:
         print(f'{state.id}: {state.name}')
+    session.close()

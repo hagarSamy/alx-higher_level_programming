@@ -14,10 +14,11 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    myState = session.query(State)
-    if not myState:
+    myState = session.query(State).filter(State.name==sys.argv[4]).first()
+    '''if not myState:'''
+    if myState is None:
         print('Not found')
-    elif (myState.name == sys.argv[4]):
-        print(f'{myState.id}: {myState.name}')
+    else:
+        print(f'{myState.id}')
     session.close()
         

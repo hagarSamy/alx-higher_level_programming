@@ -18,6 +18,6 @@ if __name__ == "__main__":
     myStatesCities = session.query(State, City).\
         filter(State.id == City.state_id).order_by(City.id).all()
     for state, city in myStatesCities:
-        print(f'{state.name}: {city.id} {city.name}')
+        print(f'{state.name}: ({city.id}) {city.name}')
     session.commit()
     session.close()

@@ -21,7 +21,6 @@ if __name__ == "__main__":
     allSt = session.query(State).all()
     for state in allSt:
         print(f'{state.id}: {state.name}')
-        if state.cities:
-            for city in state.cities:
-                print(f'    {city.id}: {city.name}')
+        for city in state.cities:
+            print(f'    {city.id}: {city.name}')
     session.close()

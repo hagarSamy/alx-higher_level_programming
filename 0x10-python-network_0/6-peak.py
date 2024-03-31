@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+''' A module defining a function that find the peak in a list'''
+
 
 def find_peak(list_of_integers):
     '''A function to find the peak'''

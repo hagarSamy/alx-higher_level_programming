@@ -12,4 +12,4 @@ if __name__ == "__main__":
     encodedData = urllib.parse.urlencode(emailData).encode('utf-8')
     with urllib.request.urlopen(url, data=encodedData) as response:
         page = response.read()
-        print(page)
+        print("{}".format(page.decode('utf-8')))

@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+'''
+A python script that takes a url, fetches the header and
+display a certain value of a header variable using getheader
+'''
 if __name__ == "__main__":
     import sys
     import urllib.request

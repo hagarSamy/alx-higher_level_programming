@@ -4,15 +4,16 @@ Python script that fetches https://alx-intranet.hbtn.io/status
 """
 
 
-if __name__ == "__main__":
-    import requests
-    my_url = "https://alx-intranet.hbtn.io/status"
-    req = requests.get(my_url)
-    print("Body response:")
-    content = req.text
-    print(f"\t- type: {type(content)}")
-    print(f"\t- content: {content}")
-
+import requests
+my_url = "https://alx-intranet.hbtn.io/status"
+with requests.get(my_url) as my_response:
+    if my_response.status_code == 200:
+        print(
+            "Body response:\n"
+            "\t- type: {}\n"
+            "\t- content: {}".format(
+                type(my_response.text),
+                my_response.text))
 # #!/usr/bin/python3
 # '''
 # a Python script that fetches https://alx-intranet.hbtn.io/status

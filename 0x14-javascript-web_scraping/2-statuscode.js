@@ -5,6 +5,6 @@ const request = require('request');
 
 request(url, (error, response, body) => {
   if (!error) {
-    console.log('code: ', response.statusCode);
+    console.log('code:', response.statusCode);
   }
 });

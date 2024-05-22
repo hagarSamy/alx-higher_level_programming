@@ -8,7 +8,7 @@ request(movAPI, (error, response, body) => {
     let count = 0;
     const films = JSON.parse(body).results;
     films.forEach(film => {
-      if (film.characters.some(characterUrl => characterUrl.endsWith('/18'))) {
+      if (film.characters.some(characterUrl => characterUrl.endsWith('/18/'))) {
         count++;
       }
     });

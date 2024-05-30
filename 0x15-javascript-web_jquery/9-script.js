@@ -2,6 +2,6 @@
 // ensure - the code is executed only after the DOM has been fully loaded and parsed
 $(document).ready(function () {
     $.getJSON('https://hellosalut.stefanbohacek.dev/?lang=fr', function (data) {
-      $('DIV#hello').text(data.hello);
+      $('#hello').text(data.hello);
     });
 });
